@@ -1,0 +1,74 @@
+Q21. What are Loop types in C#?
+    for
+    foreach
+    while
+    do while
+
+
+Q22. What is continue and break statements in C#?
+    Continue: It is used to skip the remaining statements inside the loop and goes to start position of the loop again.
+    Break: It is used to exit from the loop.
+
+
+Q23. What is the difference between array and arraylist?
+    Array: 
+        Strongly typed.
+        Size is fixed.
+    
+    Arraylist:
+        Not strictly typed. Can store any type of data.
+        Not fixed size
+
+
+Q24. What is the difference between arraylist and Hashtables?
+    Arraylist:
+        We can add only values to the array list
+    Hashtables:
+        We can add both Values and keys of any type.
+
+
+Q25. What is this keyword in C#? When to use it?
+    This Keyword is used to refer the current instance of the class.
+
+
+Q26. What is the purpose of 'using' keyword in C#?
+    There are 2 purposes of using keyword.
+        1. while using namespaces/directives
+        2. Using statement ensures that Dispose() is called even if an exception occurs.
+            It is mostly used while creating database connections
+
+
+Q27. What is the difference between 'is' and 'as'?
+    IS -> it is used to check the type of an object.
+    AS -> It is used to perform conversion between compatible reference type.
+
+
+Q28. What is the difference between ReadOnly and constant?
+    Readonly:
+        We can declare value for varible while initialization at class level and at constructor level.
+        The value of the variable can be changed only once.
+
+    Constant:
+        We can only define a variable and we can initialize a value for the same variable at class level. but we can't 
+        assign value at constructor level.
+        The value of the variable can't be changed even once.
+
+
+Q29. What is Boxing and Un-boxing?
+    Boxing:
+        It is the process of converting value type to reference type.
+    
+    Un-boxing:
+        it is the process of converting Reference type to value type. It is explicit type casting.
+
+
+Q30. What is the difference between String and StringBuilder?
+    String:
+        String is immutable.
+        We can't modify after it is created. we can only create a new string.
+
+    StringBuilder:
+        StringBuilder is mutable.
+        We can modify the existing StringBuilder object.
+        This will use append function to modify the value of StringBuilder Object
+        

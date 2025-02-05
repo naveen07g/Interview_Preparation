@@ -1,0 +1,89 @@
+Q1. What are Advantages of OOPS?
+    1. ReUse - of Code through inheritance
+    2. Flexibility - through Polymorphism
+    3. The principle of data hiding / Encapsulation helps the programmer to build secure programs
+    4. OOP Systems can be easily upgraded from small to large Systems
+    5. Modularity for easier troubleshooting.
+
+
+Q2. Disadvantages of OOPS?
+    OOPS is not suitable for small projects. Because it requires lot of planning for small projects it is not required.
+
+
+Q3. What are the different types of Inheritance?
+    1. Single Inheritance - This will have one base class and one child class
+    2. Multiple Inheritance - One base class will inherit one child class and several interfaces
+    3. MultiLevel Inheritance - Base class will inherit child class A and child class A will be inherited to Child class B
+    4. Hierarchial Inheritance - One base calss is inherited by multiple Child classes.
+
+
+Q4. How to prevent a class from being inherited?
+    SEALED - By using Sealed keyword in class
+
+
+Q5. What is Polymorphism? What are its types?
+    It is the ability of a variable, object or function to take on Multiple Forms.
+    There are 2 types of Polymorphism:
+        1. CompileTime / Method Overloading / Static Polymorphism
+        2. RunTime / Method Overriding / Dynamic Polymorphism
+
+
+Q6. What is method overloading? In how many ways a method can be overloaded?
+    Method overloading is a kind of compile time Polymorphism, In which we can create multiple methods with the same name in the same class, 
+    and all methods work in different ways.
+
+    It is called compile time Polymorphism because, .Net compiler (CLR) knows that these two different methods are different.
+
+    Method overloading can be achieved in 3 ways:
+        1. Number of parameters are different
+        2. Order of parameters is different
+        3. Type of parameters is different
+
+
+Q7. What is the difference between Overloading and Overriding?
+    Method Overloading: It is a kind of compile time Polymorphism, in which we can create multiple methods of the same name in the same class, and all methods
+                        work in different ways.
+
+                        Nothing to do with t he Inheritance.
+    
+    Method Overriding: It is creating a method in the DERIVED class with the SAME NAME and SIGNATURE as a method in the base class. Inheritance will paly 
+                        vital role here.
+
+                        Overriding uses virtual keyword for base class method and override keyword for derived class method.
+
+                        If we remove virtual and Override keyword then it will use baseClass Greetings() method and the output will be:
+                            "baseClass Saying Hello!"
+
+
+Q8. What is the difference between Abstract class and Interface?
+    Abstract Class:
+        Abstract class contains both declarationa and definition of methods. it is partially implemented class.
+        We use Abstract keyword.
+        Abstract class can contain methods, fields, constants, constructor, static members, methods.
+        Abstract class can have all types of modifiers.
+        We can't create an object for Abstract class. We can access the class properties and methods with the help of class name.
+        Abstract class doen't support multiple inheritance.
+
+    Interface:
+        Interface contains only declaration.
+        We use Interface keyword.
+        Interface can contains only Undefined methods.
+        Public is the default access modifier in Interface. We can't use any other access modifier with in Interface.
+        We can't create object for interface class.
+        Interfaces has to be implemented.
+        Interfaces support multiple inheritance.
+
+
+Q9. When to use Interface and When Abstract class?
+    Abstract Class:
+        It is a good choice when we know some methods inside the class are concrete/defined and must be implemented in the same way in all derived classes.
+    
+    Interfaces:
+        It is a good choice when we know that this method has to be there, but it can be implemented differently by independent derived classes.
+
+
+Q10. Why to even create Interfaces?
+    To maintain the consistency between all the derived class of the same type. By Inheriting the interface the classes will know 
+    what methods they need to implement.
+
+    

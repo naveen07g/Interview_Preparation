@@ -1,7 +1,0 @@
-What are Advantages of OOPS?
-
-1. ReUse - of Code through inheritance
-2. Flexibility - through Polymorphism
-3. The principle of data hiding / Encapsulation helps the programmer to build secure programs
-4. OOP Systems can be easily upgraded from small to large Systems
-5. Modularity for easier troubleshooting.

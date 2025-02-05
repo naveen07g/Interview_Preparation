@@ -1,0 +1,73 @@
+Q11. Do Interface can have constructor?
+    No, Interfaces can only be derived.
+
+
+Q12. Can you Create an Instance of an Abstract Class or an Interface
+    No, Abstract class and Interface can only used for interface not for object creation.
+
+
+Q13. What is the difference between "out" and "ref" parameters?
+    By using ref and out keywords we can pass parameters by reference.
+    When we want to return more than one values from a method then we can use out and ref parameters.
+
+    Inshort - you will use ref when you want to modify a value and 
+                        and out when you want to return new value from the called method.
+    
+    out:
+        No need to initialize out parameter before passing it. only declare it and pass it with 'out' prefix.
+        And we get new value from the method as a return value.
+        Out parameter value must be initialized before returning.
+    
+    ref: 
+        We need to initialize the value for ref parameter before passing it. and pass it with 'ref' prefix.
+        And we get new value/updated value from the method as a return value.
+        ref parameter value need not to be initialized before returning. (optional)
+    
+
+Q14. What is the purpose of 'params' keyword?
+    PARAMS - is used as a parameter which can take the VARIABLE NUMBER OF ARGUMENTS.
+    It is useful when we are getting many parameters dynamically with out any knowledge by the programmer.
+
+
+Q15. What are Access Specifiers? What is the default access modifier in a class?
+    Access specifiers are keywords to specify the accessibility of a class, method, property, field.
+
+    The Keywords are:
+        Public - Inside the entire solution.
+        Private - Inside the same class.
+        Internal - Inside the same class and derived classes in same assembly.
+        Protected - Inside the same class and in all derived classes in other assemblies also
+        Protected Internal - Inside the same class and in all derived classes and where ever declared within same assembly.
+    
+    Internal is the default access modifier for class
+    Private is the default access modifier for a method with in a class.
+
+
+Q16. How to implement Exception Handling in C#?
+    Exception handling in Object-oriented Programming is used to MANAGE Exceptions. Using Try, Catch, throw and Finally blocks.
+        Try - Exception may occur inside the try block.
+        Catch - If we encounter exception try block then Catch block will be triggered and it will handle the exception.
+        Finally - The finally block is used to execute a given set of statements, whether an exception is thrown or not thrown.
+        Throw - Inside the catch block we use throw keyword to pass the stack trace to one level up.
+    
+Q17. Can we use multiple catch blocks?
+    No, we can write multiple catch blocks but we can't use all at once / in one run. Depending on the type of the exception the 
+    respective catch block will be triggered.
+
+Q18. What is a Finally block and give an example when to use it?
+    Finally block will be executed irrespective of the exception.
+    Cleanup code will be written in finally block like (logs, connection close etc.,)
+
+
+Q19. Can we have only try block without catch block?
+    Yes, We can have only try block without catch block but we have to have finally block then.
+    Finally, block will execute even there is a return statement written in try/catch block.
+
+
+Q20. WWhat is the difference between “throw ex” and “throw”?
+    throw ex:
+        This will provide less stack trace
+    throw:
+        This will provide more stack trace details - It preserve the whole stack trace.
+
+    

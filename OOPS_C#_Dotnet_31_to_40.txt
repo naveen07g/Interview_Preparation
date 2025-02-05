@@ -1,0 +1,68 @@
+Q31. What are Nullable types?
+    variable types don't store null values by default. Hence, we use nullable types syntax to store null values inside 
+    Variables.
+
+
+Q32. What are the important components of .NET framework? What are thier roles?
+    CLR - Common Language RunTime manages the execution of programs written in any language that uses the .NET f/w,
+            for eg., C#, VB.Net, F# and so on.
+          CLR also manages the memory, security checks etc.,
+    CTS - Common Type System has set of rules which state how a datatype should be declared, defined and used in The
+            program.
+          For eg., int, string, double are types managed my CTS.
+    CLS - Common language specification, it is a subset of CTS. It defines a set of rules and restrictions that every
+            language must follow under .NET framework.
+    FCL - Framework Class Library is the collection of classes, namespaces, interfaces, and value types that are used
+            for .NET applications.
+
+
+Q33. What is an assembly? What are the different types of assembly in .NET?
+    Assembly is a Unit of deployment like EXE or DLL.
+    When you create a code and build the solution then the .NET Framework convert it into assembly which we can see inside
+    bin folder.
+    There are 3 types of assemblies:
+        1. Private Assembly - Used by single application. Can't use outside.
+        2. Shared Assembly - used by multiple applications. It is usually stored in the global assembly cache.
+        3. Satellite Assembly - Assembly with resources only, no executable code.
+
+
+Q34. What is GAC?
+    GAC stands for Global Assembly Cache.
+    It is where shared assemblies get stored in a system.
+
+
+Q35. What is Garbage Collection?
+    Garbage collector manages the allocation and releases the memory. It is a background running process.
+        Three generations of Garbage collector:
+            1. Gen 0 - When application creates fresh objects they are marked as Gen 0.
+            2. Gen 1 - if objects are not cleared in Gen 0 then those are moved to Gen 1.
+            3. Gen 2 - if objects are not cleared in Gen 1 then those are moved to Gen 2.
+
+
+Q36. Can we force Garbage collector to run?
+    Yes, GC.Collect() helps to run the garbage collector. but it is not a recommended practice. instead we can use the dispose().
+
+
+Q37. What is the difference between Process and Thread?
+    Process - It is an execution of a specific program or application. they are independent of each other.
+    Thread - It is a small portion in a process. we can have multiple threads in a process (linked)
+
+
+Q38. Explain Multithreading?
+    In a Single process multiple threads will work simultaneously.
+    It is way to achieve Multitasking. It saves time because multiple tasks are being executed at the same time.
+    We use System.Threading namespace to use multithreading concept.
+
+
+Q39. What is reflection?
+    Reflection is the ability of a code to access the metadata of the assembly during runtime.
+    Metadata is the data about the data.
+    If we want to check the version of the assembly while running the application then we can use reflection.
+
+
+Q40. What is serialization?
+    It is a process of converting object to binary format (stream of bytes).
+    This conversion will help us to store the data at the destination like dataases, files, memory etc.,
+    It is mostly used in Web API to convert class object into JSON string.
+
+    
