@@ -1,0 +1,52 @@
+Q31. Explain Data Annotations?
+    Data annotations in MVC are responsible for providing the instance checking for the client-side.
+        Required
+        StringLength
+        Bind
+        EmailAddress
+        Range
+        Password
+
+Q32. Explain the difference between RenderPage and RenderBody?
+    RenderPage:
+        It is layout page that contains content filled by the other pages.
+        It is always present in the layout view.
+        It doesn't include any parameters
+        Multiple methods are not allowed.
+
+    RenderBody:
+        It is a method of master page or a razor commonly used as a layout page.
+        It doesn't have a fixed path.
+        It always includes the parameters like Boolean.
+        It allows multiple methods.
+
+
+Q33. What is JSON Binding?
+    Json binding is known as Javascript Object Notation Binding that supports MVC3 using JsonValueProviderFactory.
+
+
+Q34. What is Cross-Domain Ajax?
+    Ajax Cross-domain in sending a request to refresh the URL domain of the web pages.
+        sendJSONPrequest
+        Cross-domain resource sharing.
+
+
+Q35. Explain the usage of remote validation in MVC?
+    It is the process of validating specific data posting to a server without posting the entire data to the server.
+
+
+Q36. Explain implementation of Ajax in MVC?
+    Ajax is Asynchronous Javascript, and XML client-side script communicates to the database without any need from the postback.
+
+
+Q37. Explain the roles of Presentation, Abstraction and Control in MVC?
+    PAC is an architectural pattern that separates MVC interactive systems into 3 types of components:
+        Presentation
+        Abstraction
+        Control
+
+
+Q38. Explain the uses of Keep and Peek in MVC?
+    Keep: Keep in MVC is Used to preserv the data of TempData after the value is read.
+    Peek: Peek in MVC is used to read the value in Tempdata without clearing the data.
+    

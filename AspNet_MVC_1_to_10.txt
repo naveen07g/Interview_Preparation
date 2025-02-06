@@ -1,0 +1,72 @@
+Q1. What is MVC (Model, View and Controller)? Explain MVC life cycle?
+    It is framework to build web application using MVC framework design.
+        Model - Represents the data
+        View - Displays the data
+        Controller - It acts as an mediator between Model and view.
+                    It takes the request from view and process the business logic by communicating with the model.
+                    and finally, responds to the view with output.
+
+
+Q2. What are the advantages of MVC over Webforms?
+    In webforms -> one view file (.aspx) is bind with the aspx.cs file -> Hence, it is tightly coupled.
+    In MVC -> One view can interact with multiple controllers and one controller can interact with multiple views. No Tight coupling.
+
+    MVC separates logic cleanly ie., UI(View), Business logic(controller), Model/Data logic(Model).
+    MVC provides multiple view support due to separation of model from the view the UI can display multiple views of the 
+    same data at the same time.
+
+
+Q3. What are the different return types of a controller action method?
+    ViewResult      -> returns web page from action method.
+    PartialViewResult-> returns part of the view that renders inside another view.
+    RedirectResult  -> It is used to redirect to any other controller or action method based on the URL.
+    File            -> Returns binary result in the response.
+    JSON            -> Returns Json result.
+    Empyt           -> Returns void (nothing).
+
+
+Q4. What are filters and their types in MVC?
+    MVC filters is a custom class which wil be triggered befor the request hits the action method.
+    This filters are used to perform some pre-processing logic like: 
+            Authorization filter, 
+            Action filter, 
+            Result filter,
+            Exception filter
+
+
+Q5. What is Authentication and Authorization in mvc?
+    Authentication - It identifies who are you?
+        It is the process of identifying the user based on credentials and verifying the user identity.
+    Authorization - What rights you have with in the application?
+        What all access does the authenticated user is having.
+
+
+Q6. What are the types of authentication?
+    Form based Authentication - It is based on cookies, The authentication and permission settings are stored in Cookies.
+    Passport Authentication - It is centralized authentication provided by Microsoft.
+    Window authentication - This type of authentication is created for a web application for a limited number of users who already
+                            have windows account. This is quite useful in an intranet environment.
+
+
+Q7. What is Output caching in MVC? How to implement it?
+    Output caching means - User sends request to server -> server communicates with database and returns the data from the 
+                            database. Now instead of everytime reaching the database. Server internally caches the data and
+                            supplies for user requests.
+    Output cache enables you to cache the content returned by the controller action. This is kind of result filter.
+
+
+Q8. What is the difference between View data, View bag and temp data?
+    Viewdata -> Controller to view - requires type casting for complex data types.
+    Viewbag -> Controller to view (dynamic type) - doesn't require type casting.
+    tempdata -> Controller to Controller - one time readable.
+
+
+Q9. How to pass data from controller to view in MVC?
+    Using ViewData / ViewBag
+
+
+Q10. What is Partial view?
+    It is a special view in MVC which renders portion of view content in MVC application.
+    One partial view can be used in multiple views hence, it increases the code reusability and reduces the code duplication.
+
+    

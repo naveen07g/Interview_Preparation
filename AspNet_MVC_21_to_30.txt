@@ -1,0 +1,57 @@
+Q21. What is Unobtrusive Ajax?
+    It is a progressive enhancement that focuses on the delivery of the content.
+    The Ajax calls are made through built-in helpers to eliminate the need to add the blocks of code.
+
+
+Q22. What is exception handling in MVC?
+    Exception Handling in MVC is used to execute the action methods using try and catch blocks.
+    It is the process for responding to the exceptional conditions for the special processing.
+
+
+Q23. What is a Layout View?
+    It allows creating a common template that inherits multiple views to provide a consistent look for an application.
+        RenderSection()
+        RenderBody()
+
+
+Q24. What are Glimpse in MVC?
+    Glimpse in MVC is a free and open-source NuGet platform used to perform operations like performance, debugging and diagnosis for the application.
+
+
+Q25. What is a Request Life Cycle?
+    It is a sequence of event that occurs when an HTTP request is handled by the application. 
+    Request life cycle involves five steps.
+        Routing
+        MVC Handler
+        Controller
+        Action Invoker
+        Result Execution
+
+
+Q26. Explain the ways of adding the constraints to a router?
+    Constraints to a router in MVC are added in two ways:
+        Constraints to a router are added by using the object that implements the IRouterConstraint interface.
+        Using regular expression.
+
+
+Q27. Explain Routing in MVC?
+    Routing is the process of mapping the browser request to the controller and responding back.
+        Convention Based Routing
+        Attribute Based Routing
+
+
+Q28. What is ViewStart?
+    ViewStart is introduced by a view engine that applies to all views automatically.
+    
+
+Q29. What is Attribute routing?
+    Attribute routing is a type of routing that provides more control over the URL by defining routers directly on the actions and controller in the application.
+        Reduce the chance of errors in the application.
+        Easy to map routes pointing to the same action.
+        More control over the URL.
+
+
+Q30. How to change the action names in MVC?
+    ActionName attribute is used for changing the action name in MVC.
+
+    

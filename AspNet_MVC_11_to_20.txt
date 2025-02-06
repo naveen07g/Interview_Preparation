@@ -1,0 +1,62 @@
+Q11. What are areas in MVC?
+    Areas are just a way to segregate or isolate the modules of a large application into multiple or separated MVC.
+
+
+Q12. How validation works in MVC?
+    Validation can be done using data annotation attributes.
+
+
+Q13. Explain the concept of MVC scaffolding?
+    Scaffolding is a code generation framework for mvc web applications. using scaffolding we can reduce the amount
+    of time to develop standard data operations in your project like Crud operations.
+
+
+Q14. What is Bundling and minification in MVC?
+    It is related to Javascript and css files.
+    Bundling: It let us combine multiple js and css files so that they can be downloaded as a unit, rather than making individual HTTP requests.
+    Minification: It squeezes out whitespace and performs other types of compression to make the downloaded files as small as possible.
+
+
+Q15. How to implement Security in web applications in MVC?
+    Error handling must setup via Custom Error Page - Intercept too - Burp Suite is a cyber Seurity tool.
+    Cross-Site Request Forgery (CSRF) - avoided by using AntiforgeryToken.
+    Cross-Site Scripting (XSS) attacks
+    Malicious File Upload. (We should not allow user to upload any file with any extension type. Instead we should specify the type of file which user can upload like (.png, .jpg, .pdf.....))
+    SQL Injection Attack - Solution: Validate inputs, Use Parameterized queries, Use ORM (eg., Dapper, Entity Framework), Use Stored procedures.
+    Token based Authentication - Web api and application.
+    Save the password in Encrypted form so that even developer can't access it.
+    Use HTTPS
+
+
+Q16. What are Action Verbs?
+    ActionVerbs are HTTP request applied to Action methods to work for HTTP reqeust methods.
+        HttpPost
+        HttpGet
+        HttpPut
+        HttpDelete
+
+
+Q17. What are Code Blocks?
+    Code blocks in MVC are used to enclcose C# statements. using @ symbol and curly paranthesis
+        Eg., html @{
+                        //Code block
+                    }
+
+
+Q18. What are helpers in MVC and list types of helpers?
+    Helpers in MVC are HTML classes that help to create HTML controls programatically.
+        eg.,    createlinks
+                createinputs
+                createforms
+
+
+Q19. what are non action methods?
+    These are attributes used when a public methods in a controller does not want an action method.
+
+
+Q20. What are file extensions for Razor View?
+    Razor is a view engine used to write the mix of HTML and server-side.
+        .cshtml - used for c#
+        .vbhtml - used for Visual Basic.
+
+    

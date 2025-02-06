@@ -1,0 +1,78 @@
+Q41. What is Jagged Array?
+    In short Jagged array means. Arrays inside an Array. There can be any
+
+
+Q42. What is enum?
+    An enumeration is a set of named integer constants. An enumerated type is declared using the enum keyword.
+    C# enumerations are value data type. In other words enumeration contains its own values and cannot inherit or cannot pass
+    inheritance.
+
+
+Q43. What is static class?
+    A static class is basically the same as a non-static class, but there is one difference: a static class cannot be instantiated.
+    In other words, We can't create an object for static class. and we can't use new keyword.
+
+
+Q44. What are delegates?
+    Delegates are type safe functional pointers. These are required to write much more generic type safe code.
+    Encapsulating the methods call from caller.
+    Used to call a method asynchronously.
+    Effective use of delegates improves the performance of the application.
+
+
+Q45. What is the difference between Struct and Class?
+    Structs: Structs are value type
+            Structs stored on the stack cause, additional overhead but retrieves the data fastly.
+            Structs can't be inherited.
+
+    Classes: Classes are reference type 
+            Classes support inheritance.
+            Classes stored in the heap memory, hence time consumption is more to retrieve the data.
+
+
+Q46. What is constructor? Explain
+    Constructor is a special type of method of a class that will automatically be invoked when an instance of class is created.
+    Constructors are mainly used to initialize private fields of the class while creating the instance for the class.
+    When we are not creating a constructor in the class, then compiler will automatically create a default constructor. 
+        In the class that initializes all numeric fields in the class to zero and all string and object fields to null.
+    There are 5 different types of constructors:
+        1. Default Constructor
+        2. Parameterized Constructor
+        3. Static constructor
+        4. Copy Constructor
+        5. Private Constructor
+
+
+Q47. What is Encapsulation?
+    it is all about hiding of the data by wrapping the data under a special container known as a class. Which provides the 
+    security to members that are defined inside in it.
+        Eg: Class
+
+
+Q48. What is Abstraction?
+    This is all about hiding of the complexity and then provide the set of interfaces to consuming the functionality.
+    Method is the good example of abstraction because when we call a method we never knows the logic behind them. We are aware
+    only how to called them but not how they are defined.
+        Eg: Send a message, to call someone.
+
+
+Q49. What is the difference between dictionary and hashtables?
+    Hashtables:
+        It is thread safe.
+        This stores the data in objects. Hence the boxing and un-boxing is required.
+        When we try to fecth the value based on key which doesn't exist this will return null.
+        Hashtables are more efficient than dictionary to handle large amount of data.
+        This will not maintain the order of entry.
+
+    Dictionary:
+        It is not thread safe.
+        This stores the data in values. Hence the boxing and un-boxing is not required.
+        When we try to fecth the value based on key which doesn't exist this will return "KeyNotFoundException".
+        This will maintain the order of entry.
+
+
+Q50. What is the difference between Finalize and dispose method?
+    Dispose() is called when we want for an object to release any unmanaged resources with them.
+    On the other hand Finalize() is used for the same purpose but it doesn't assure the garbage collection of an object.
+
+    
