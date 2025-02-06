@@ -1,0 +1,74 @@
+Q1. What is an Object and a Class?
+Answer: Class is an encapsulation of properties and methods that are used to represent a real-time entity. It is a data structure that brings all the instances together in a single unit.
+The object is defined as an instance of a Class. Technically, it is just a block of memory allocated that can be stored in the form of variables, an array, or a collection.
+
+
+Q2. What are the fundamental OOP concepts?
+Answer: The four fundamental concepts of Object-Oriented Programming are:
+Encapsulation: Here, the internal representation of an object is hidden from the view outside the object’s definition. Only the required information can be accessed whereas the rest of the data implementation is hidden.
+Abstraction: It is a process of identifying the critical behavior and data of an object and eliminating the irrelevant details.
+Inheritance: It is the ability to create new classes from another class. It is done by accessing, modifying, and extending the behavior of objects in the parent class.
+Polymorphism: The name means, one name, many forms. It is achieved by having multiple methods with the same name but different implementations.
+
+Q3. What is Managed and Unmanaged code?
+Answer: Managed code is code that is executed by CLR (Common Language Runtime) i.e all application code is based on .Net platform. It is considered as managed because of the .Net framework which internally uses the garbage collector to clear up the unused memory.
+Unmanaged code is any code that is executed by the application runtime of any other framework apart from .Net. The application runtime will take care of memory, security, and other performance operations.
+
+
+Q4. What is an Interface?
+Answer: Interface is a class with no implementation. The only thing that it contains is the declaration of methods, properties, and events.
+
+
+Q5. What are the different types of classes in C#?
+Answer: The different types of classes in C# are:
+Partial class: It allows its members to be divided or shared with multiple .cs files. It is denoted by the keyword Partial.
+Sealed class: It is a class that cannot be inherited. To access the members of a sealed class, we need to create the object of the class.  It is denoted by the keyword Sealed.
+Abstract class: It is a class whose object cannot be instantiated. The class can only be inherited. It should contain at least one method.  It is denoted by the keyword abstract.
+Static class: It is a class that does not allow inheritance. The members of the class are also static.  It is denoted by the keyword static. This keyword tells the compiler to check for any accidental instances of the static class.
+
+
+Q6. Explain code compilation in C#.
+Answer: Code compilation in C# includes the following four steps:
+Compiling the source code into Managed code by C# compiler.
+Combining the newly created code into assemblies.
+Loading the Common Language Runtime(CLR).
+Executing the assembly by CLR.
+
+
+Q7. What are the differences between a Class and a Struct?
+Answer: Given below are the differences between a Class and a Struct:
+Class	                                            Struct
+Supports Inheritance	                            Does not support Inheritance
+Class is Pass by reference (reference type)	        Struct is Pass by Copy (Value type)
+Members are private by default	                    Members are public by default
+Good for larger complex objects	                    Good for Small isolated models
+Can use waste collector for memory management	    Cannot use Garbage collector and hence no Memory management
+
+
+Q8. What is the difference between the Virtual method and the Abstract method?
+Answer: The Virtual method must always have a default implementation. However, it can be overridden in the derived class, although it is not mandatory. It can be overridden using the override keyword.
+An Abstract method does not have an implementation. It resides in the abstract class. The derived class must implement the abstract method. An override keyword is not necessary here though it can be used.
+
+Q9. Explain Namespaces in C#.
+
+Answer: They are used to organize large code projects. “System” is the most widely used namespace in C#. We can create our own namespace and can also use one namespace in another, which is called Nested Namespace.
+
+They are denoted by the keyword “namespace”.
+
+Q10. What is “using” statement in C#?
+
+Answer: “Using” keyword denotes that the particular namespace is being used by the program.
+
+For Example, using System
+
+Here, System is a namespace. The class Console is defined under System.  So, we can use the console.writeline (“….”) or readline in our program.
+
+Q11 Explain Abstraction.
+
+Answer: Abstraction is one of the OOP concepts. It is used to display only the essential features of the class and hide unnecessary information.
+
+Let us take an example of a Car:
+
+A driver of the car should know the details about the Car such as color, name, mirror, steering, gear, brake, etc. What he doesn’t have to know is an internal engine, and exhaust system.
+
+So, Abstraction helps in knowing what is necessary and hiding the internal details from the outside world. Hiding of the internal information can be achieved by declaring such parameters as Private using the private keyword.

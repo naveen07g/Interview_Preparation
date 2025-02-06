@@ -1,0 +1,143 @@
+Q1. What is .Net Maui?
+    .NET MAUI (Multi platform Application UI) is a framework for building cross platform mobile and desktop apps using .NET and C#. 
+    It allows developers to create apps that run on Android, iOS, macOS, and Windows with a single code base.
+
+
+Q2. How .NET MAUI differ from Xamarin.Forms?
+    .NET MAUI is an evolution of Xamarin.Forms, offering a more unified and simplified development experiencec. It provides a 
+    single project structure, imporved performance, and support for additional platforms.
+
+
+Q3. What are the key benefits of using .NET MAUI?
+    Benefits include code sharing, native performance, a single project structure, adaptive UIs, and support for multiple platforms
+    with a single codebase.
+
+
+Q4. Explain the concept of Blazor in .NET MAUI?
+    Blazor allows developers to build native mobile and desktop apps using C# and .NET with a familiar web development approach.
+    Blazor apps can run natively on supported platforms.
+
+
+Q5.What is the difference between Hot Reload and Hot Restart in .NET MAUI?
+    Hot Reload lets you make code changes while the app is running, instantly reflecting those changes in the app's UI.
+    Hot Restart allows you to restart the app quickly to see changes that can't be applied via Hot Reload.
+
+
+Q6. What platforms does .NET MAUI support?
+    .NET MAUI support Android, iOS, macOS, & Windows.
+
+
+Q7. Explain the role of the .NET CLI in .NET MAUI development.
+    The .NET CLI is used for creating, building and managing .NET MAUI projects. It provides various commands for project
+    management and app deployment.
+
+
+Q8. How do you handle platform-specific code in .NET MAUI?
+    You can use DependencyService or Dependency Injection to handle platform-specific code in .NET MAUI, allowing you to 
+    execute platform-specific code from shared code.
+
+
+Q9. What is the MVU (Model-View-Update) pattern in .NET MAUI?
+    MVU is an architectural pattern in .NET MAUI that helps in building applications with a unidirectional data flow.
+    It simplifies app development by reducing the complexity of managing state and UI updates.
+
+
+Q10. What is the purpose of the .NET MAUI Community Toolkit?
+    The .NET MAUI community Toolkit is a library of reusable controls, extensions, and helpers for .NET MAUI apps, created 
+    and maintained by the community.
+
+
+Q11. How do you handle navigatin between pages in .NET MAUI?
+    Navigation in .NET MAUI can be achieved using the NavigationPage and Shell navigation patterns,where you define a 
+    navigation heirarchy and use methods like PushAsync and PopAsync to navigate between pages.
+
+
+Q12. What is the ResourceDictionary in .NET MAUI, and how is it used?
+    The ResourceDictionary is used to define and manage shared resources such as styles, templates, and colors that can be 
+    reused throughout your .NET MAUI application.
+
+
+Q13. Explain the concept of Handlers in .NET MAUI?
+    Handlers in .NET mAUI are responsible for mapping UI elements and their properties to the native controls and properties 
+    of each platform. they enable cross-platform rendering of UI elements.
+
+
+Q14. What is .NET MAUI Essentials?
+    .NET MAUI Essentials is a set of libraries and APIs that provide essential functionality for .NET MAUI apps, such as 
+    file system access, permissions, and device features.
+
+
+Q15. How do you manage local data storage in .NET MAUI?
+    You can use the Entity Framework Core, SQLite, or other data access libraries to manage local data storage in .NET MAUI apps.
+
+
+Q16. What is the "Device.RuntimePlatform" property, and how is it used?
+    Device.RuntimePlatform is a property that helps you determine the current platform (iOS, Andriod, macOS, Windows) at runtime,
+    allowing you to write platform-specific code.
+
+
+Q17. Explain the concept of "LayoutOptions" in .NET MAUI?
+    layoutOptions are used to crontrol how views should be laid out within containers. they provide options like Start, Center, End, 
+    Fill, and Expand to define how views should be aligned and sized.
+
+
+Q18. What is the App.Xaml file, and what role does it play in .NET MAUI apps?
+    The App.Xaml file is the appliction's resource dictionary and is used to define application-level resources, such as 
+    styles and themes, that can be accessed throughout the app.
+
+
+Q19. How can you integrate platform-specific APIs or libraries in .NET MAUI?
+    You can use DependencyService or platform-specific projects to integrae platform-specific APIs of libraries into your
+    .NET MAUI app.
+
+
+Q20. What is the purpose of the DependencyService in .NET MAUI?
+    DependencyService is used to call platform-specific code from shared code in .NET MAUI. It allows you to 
+    access device-specific functionality and APIs.
+
+
+Q21. How do you handle Asynchronous programming in .NET MAUI?
+    Asynchronous Programming in .NET MAUI is typically done using async/await and the Task-based asynchronous pattern (TAP) 
+    for non-blockig operations.
+
+
+Q22. What is the purpose of the "MainPage" in .NET MAUI , and how is it defined?
+    The MainPage is the initial user interface page of a .NET MAUI app. It is defined in the App.xaml.cs 
+    file and serves as the entry point of the app.
+
+
+Q23. How do you handle app lifecycle events in .NET MAUI?
+    You can override methods like OnStart, OnSleep, and OnResume in the Application class to handle app lifecycle events.
+
+
+Q24. What is the purpose of "Xamarin.Essentials" library in .NET MAUI?
+    Xamarin.Essentials is a library that provides a wide range of cross platform APIs for accessing device features such as geolocation,
+    Sensors, and permissions.
+
+
+Q25. Explain the concept of "Effects" in .NET MAUI?
+    Effects are platform-specific visual modifications applied to a control in .NET MAUI. They allow you to customize the 
+    appearance or behaviour of controls on each platform.
+
+
+Q26. How do you localize a .NET MAUI app for multiple languages?
+    .NET MAUI supports localization through resource files, allowing you to provide translations for different languages and cultures.
+
+
+Q27. What is the "OnIdiomm" markup extension and how is it used?
+    The "OnIdiom" markup extension is used to define platform-specific values or layouts in XAML by specifying different values 
+    for iOS, Android and other platforms.
+
+
+Q28. How do you handle permissions in .NET MAUI?
+    You can use the Xamarin.Essentials library to request and check permissions for device features like camera, location, and storage.
+
+
+Q29. What are the different deployment options for .NET MAUI apps?
+    .NET MAUI apps can be deployed to app stores (Google Play Store, Apple App Store), side-loaded onto devices, 
+    or distributed through enterprise channels.
+
+
+Q30. What tools and Ide's are commonly used for .NET MAUI development?
+    Visual Studio and Visual Studio for MAC are popular IDEs for .NET MAUI development. Additionally, you can use 
+    Visual Studio Code with appropriate extensions for cross platform development.
