@@ -1,0 +1,401 @@
+ //https://www.interviewbit.com/web-api-interview-questions/
+ 
+ 1. What is ASP.NET Web API?
+ASP stands for Active server pages. ASP.NET is an updated version of legacy ASP. It is a framework that is used for 
+developing HTTP services to provide responses to client requests. It can be accessed in different applications on 
+different platforms. It is provided by Microsoft open-source technology for developing and consuming HTTP-based services 
+on top of .NET Framework.  It is very easy to build HTTP services using ASP.NET Web API. These services can be used by 
+different clients as given below:
+
+    Desktop Applications
+    Mobile Applications
+    IOTs
+    Browsers
+
+
+
+
+2. What are the advantages of using ASP.NET Web API?
+Some of the core advantages of using ASP.NET Web API are given below:
+
+    It provides the best platform for developing RESTful applications on .NET Framework.
+    It works the same way that HTTP works with help of HTTP verbs such as GET, POST, PUT, DELETE for all crud operations.
+    It provides enough flexibility in Web API creation.
+    It completely supports routing.
+    It also supports model binding, validation, Odata (Open Data Protocol) that allows creation and consumption of RESTful APIs.
+    It has the ability to develop custom help and test pages with help of ApiExplorer.
+    One can develop non-SOAP-based services such as plain XML, JSON strings, etc.
+    It also increases the TDD (Test Data-Driven) approach in the development of RESTful services. 
+
+
+
+
+
+
+
+3. What are new features used in ASP.NET Web API 2.0
+ASP.NET Web API includes a number of new exciting features as given below:
+
+    Attribute Routing
+    CORS (Cross-Origin Resource Sharing)
+    OWIN (Open Web Interface for .NET) self-hosting
+    IHttpActionResult
+    Web API OData
+
+
+
+
+
+
+
+4. What is the use of HttpResponseMessage?
+It is used to set response values such as header and status control. It simply allows us to work with HTTP protocol. 
+It represents HTTP response messages that encapsulate data and status code. 
+
+// GetEmployee action 
+public HttpResponseMessage GetEmployee(int id) 
+{     
+     Employee emp = EmployeeContext.Employees.Where(e => e.Id == id).FirstOrDefault(); 
+     if (emp != null) 
+      { 
+               return Request.CreateResponse<Employee>(HttpStatusCode.OK, emp);     
+      }     else     
+      { 
+               return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Employee Not Found"); 
+      } 
+}
+
+
+
+
+
+
+
+
+5. What is the difference between ApiController and Controller?
+ApiController: It is used to return data that is arranged in series and then sent to the client.
+
+public class TweetsController : ApiController
+{
+         // GET: /Api/Tweets/  
+        public List<Tweet> Get()
+      {
+          return Twitter.GetTweets();
+       }
+} 
+Controller: It is used to provide normal views.  
+
+public class TweetsController : Controller 
+{  
+        // GET: /Tweets/  [HttpGet]  public ActionResult Index() 
+       {    
+           return Json(Twitter.GetTweets(), JsonRequestBehavior.AllowGet);  
+       }
+}
+
+
+
+
+
+
+
+
+
+6. What do you mean by Caching and What are its types?
+Caching is basically a technique or process of storing data somewhere or in the cache for future requests. The cache is a temporary storage area. Caching keeps all frequently or recently accessed files or data in the cache memory and accesses them from the cache itself rather than actual address of data or files. The cache interface simply improves the storage mechanism for request/response object pairs that are being cached.
+
+Advantages of Caching:
+
+It is considered the best solution to ensure that data is served where it is needed to be served that too at a high level of efficiency which is best for both client and server.
+It delivers web objects faster to the end-user.
+It reduces load time on the website server.
+It leads to faster execution of any process.
+It decreases network costs.
+Types of Caching:
+There are basically three types of caching as given below:
+
+Page Caching
+Data Caching
+Fragment Caching
+
+
+
+
+
+
+
+
+
+7. WCF is replaced by ASP.NET Web API. True/False?
+WCF: It is a framework used for developing SOAP (Service Oriented Applications Protocols). It also supports various 
+transport protocols as given above. 
+ASP.NET Web API: It is a framework used for developing non-SOAP-based services. It is limited to HTTP-based services.
+
+No, it's not true that ASP.NET Web API has replaced WCF. WCF was generally developed to develop SOAP-based services. 
+ASP.NET Web API is a new way to develop non-SOAP-based services such as XML, JSON, etc. WCF is still considered a better 
+choice if one has their service using HTTP as the transport and they want to move to some other transport like TCP, 
+NetTCP, MSMQ, etc. WCF also allows one-way communication or duplex communication. 
+
+
+
+
+
+
+
+
+
+
+8. What are the main return types supported in ASP. Net Web API?
+It supports the following return types:
+
+    HttpResponseMessage
+    IHttpActionResult
+    Void
+    Other types such as string, int, etc. 
+
+
+
+
+
+
+
+
+
+9. What is ASP.NET Web API routing?
+Routing is the most important part of ASP.NET Web API. Routing is a way how Web API matches a URI to an action. It is 
+basically a process that decides which action and controller should be called. The controller is basically a class that 
+\handles all HTTP requests. All public methods of controllers are basically known as action methods or just actions. 
+Whenever a Web API framework receives any type of request, it routes that request to action. 
+
+There are basically two ways to implement routing in Web API as given below:
+Convention-based routing: Web API supports convention-based routing. In this type of routing, Web API uses route templates 
+to select which controller and action method to execute. 
+
+Attribute-based routing: Web API 2 generally supports a new type of routing known as attribute routing. As the name 
+suggests, it uses attributes to define routes. It is the ability to add routes to the route table via attributes. 
+
+
+
+
+
+
+
+10. HOW to secure ASP.NET Web API?
+Web API has become key to programming web-based interactions. It can be accessed by anyone who knows the URL. Therefore, 
+they have become targets for hackers. One needs to secure Web API by controlling Web API and by deciding who can and who 
+cannot have access to Web API. There are basically two ways or techniques that make our Web API more secure. 
+
+Authentication: It is a process that helps to identify and check users by their credentials such as password, username, etc. To have access to the web API, firstly user credentials are needed to be passed in the request header. If user credentials are not passed into the request header, then the server returns 401 status code (unauthorized). The best authentication to be used is OAuth 2.0. 
+
+Authorization: It is a process that helps to decide whether or not a user has access to perform an action. Authorization filters are used to implement authorization.
+
+
+
+
+
+
+
+
+
+11. What are Exception filters in ASP.NET Web API?
+Exception filter is generally used to handle all unhandled exceptions that are generated in web API. It implements 
+IExceptionFilters interface. It is the easiest and most flexible to implement. This filter is executed whenever the 
+controller method throws any unhandled exception at any stage that is not an HttpResponseExecption exception. 
+
+
+
+
+
+
+
+
+
+12. Which .NET framework supports ASP.NET Web API?
+.NET Framework 4.0 generally supports the first version of ASP.NET Web API. After that, .NET Framework 4.5 supports the 
+latest version of web API i.e., ASP.NET Web API 2.
+
+
+
+
+
+
+
+
+
+
+13. What is HttpConfiguration in Web API?
+It is considered as the main class that includes different properties with help of which one can override the default 
+behavior of Web API. 
+
+Some properties are given below:
+
+    DependencyResolver: It sets or gets a dependency resolver for dependency injection.
+    Services: It gets web API services.
+    ParameterBindingRules: It gets a collection of rules for how parameters should be bound.
+    MessageHandlers:  It sets or gets message handlers.
+    Formatters: It sets or gets media-type formatters.
+
+
+
+
+
+
+
+
+
+
+14. Can we return View from ASP.NET Web API method?
+No, we cannot return the view from the ASP.NET Web API method. ASP.NET web API develops HTTP services that provide raw 
+data or information. ApiController in ASP.NET MVC application only renders data that is serialized and sent to the client. 
+One can use a controller to provide normal views. 
+
+
+
+
+
+
+
+
+
+
+15. What is content negotiation in ASP.Net Web API?
+Content negotiation is basically a process of selecting the best representation from multiple representations that are 
+available for a given response. It simply allows one to choose rather than negotiate content that one wants to get in 
+response. It is performed at the server-side. In simple words, it chooses the best media type for matters to return a 
+response to an incoming request. 
+
+
+
+
+
+
+
+
+
+
+16. Difference between HTTP GET vs HTTP Post?
+HTTP (HyperText Transfer Protocol) simply manages request-response between client and server. It works as a 
+request-response protocol between client and server. 
+
+HTTP GET: This method is used to get information or data from a respective server at a specified URL.
+
+Example: 
+GET/RegisterStudent.asp?user=value1&pass=value2
+
+HTTP POST: This method is used to send data or information to respective servers. 
+
+Example:
+POST/RegisterStudent.asp HTTP/1.1 
+Host: www.guru99.com  
+user=value1&pass=value2  
+
+HTTP GET	                                                HTTP POST
+Its parameters are included in the URL.	                    Its parameters are included in the body.
+This method is used to request data from specified 	        This method is used to send data to a server to create or update 
+    resources and has no other effect.                          resources.
+It carries a request parameter appended in the URL string.	It carries request parameters in the message body that 
+                                                                make it a more secure way of sending data or information 
+                                                                from the client to the server.
+Request method using GET is cacheable.	                    Request method using POST is not cacheable.
+GET requests are less safe than POST.	                    Post request is safer than GET.
+There is a restriction on data type in GET method and only 	There are no restrictions on data type in this method 
+    ASCII characters are allowed.                                and binary data is also allowed.
+Data is visible to everyone in the URL.	Data is not         It is present in the payload.
+    displayed in the URL.
+
+
+
+
+
+
+
+
+17. What is CORS in Web API?
+CORS (Cross-Origin Resource Sharing) is basically a mechanism that allows one to make requests from one website to another 
+website in a browser that is normally not allowed by another policy called SOP (Same Origin Policy). It supports secure 
+cross-origin requests and data transfers among clients or browsers and servers. Here, cross-origin request means requests 
+coming from different origins. CORS simply resolves the same-origin restriction for JavaScript. One can enable CORS for web 
+API using the respective web API package or OWIN middleware. 
+
+
+
+
+
+
+
+
+
+
+
+18. Name method that validates all controls on page?
+Page.Validate()
+
+
+
+
+
+
+
+
+
+
+
+19. What parameters can be passed in the URL of API?
+Context keys, documents keys, or anything that initiates API to hit the exact end-point are few parameters that one can 
+pass in the URL to define the complete end-point.  
+
+
+
+
+
+
+
+
+
+
+
+20. What is the use of DelegatingHandler?
+DelegatingHandler is used to develop a custom Server-Side HTTP Message Handler in ASP.NET Web API. It is used to 
+represent Message Handlers before routing in Web API. 
+
+
+
+
+
+
+
+
+
+
+21. Web API uses which library for JSON serialization?
+Json.NET library is used by Web API for JSON serialization. 
+
+
+
+
+
+
+
+
+22. Explain method to handle error using HttpError in Web API?
+CreateErrorResponse is an extension method that can be used in Web API controller methods to return error codes and 
+error messages. It creates an HttpError object and then wraps it inside an HttpResponseMessage object. 
+
+
+
+
+
+
+
+
+
+
+
+23. How to unit test Web API?
+Using Web API tools like Fiddler, we can perform unit testing in Web API. Fiddler is basically a free debugging proxy 
+for any browser that can be used to compose and execute various HTTP requests to Web API and check HTTP response. 
+It is simply used for testing restful web services. It allows one to inspect and check both incoming and outgoing 
+data to monitor and modify requests and responses before the browser receives them.  Below is given some setting 
+that is needed to be done fiddler:
+
+Fiddler – Compose Tab -> Enter Request Headers -> Enter Request Body and then execute.
