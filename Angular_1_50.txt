@@ -1,0 +1,194 @@
+1. What is Angular?
+    It is a frontend f/w for building single page client applications in HTML and Typescript/javascript.
+    This consists of several libraries including both core and optional.
+
+2. Why Angular?
+    Programmer can write their code in Typescript which abids for OOPS concepts and strictly typed by default.
+    Reusable libraries.
+    Easy to understand, easy to maintain and easily testable.
+
+3. Advantages of Angular?
+    It has large community because it is open source and built and maintained by Google.
+    It is faster, light weight and easier framework.
+    It uses Typescript Language for app development.
+    Unit-testing Ready - It is unit testing ready, and that is one of its most compelling advantages.
+
+4. Building Blocks of Angular?
+    Modules
+    Components
+    Directives
+    Templates
+    Metadata
+    Pipes and filters
+    Routing
+    Services
+    Forms
+    Data Binding
+    Dependency Injection
+
+5. What  is Module?
+    It is to organize an application functionality based like (Security, Logging, Inventory, payment, Admission...)
+    It is collection of components, directives and pipes making some of them public through the exports property, so that 
+        external components can use these modules.
+    It is decorated with @module.
+
+6. What is Component?
+    It is the building block of an angular application.
+    It is technically a directive which will have a Selector, TemplateURL, StylesURL & a Typescript class to write some 
+        binding logic code.
+    It controls the patch of screen called view.
+    It is decorated with @Component decorater which extends the @Directive decorator.
+
+7. What is Directive?
+    Directives allow us to watch and modify the behaviour of DOM elements at runtime of the application.
+    They are 3 types: Component, Structural, Behavioural/Attribute.
+    We have some built-in directives also like: *ngIF, *ngFor, *ngSwitch
+    It is decorated with @Directive.
+
+8. What is Template?
+    A template is a form of HTML that tells Angular how to render the component.
+    Each Angular component has an associated template that defines the DOM (Document Object Model) 
+        structure rendered on the page.
+
+9. What is Metadata?
+    It is used to decorate a class to make the class behave as per metadata.
+    Different parts of metadata:
+        Annotations: These are decorators at class level. It can have as array @Component, @Routes
+        Parameters: This is at constructor level, the @Environment is the metadata applied to the property.
+
+10. What is Pipes?
+    It is used to transform the data, When we only need that data transformed in a template.
+    A pipe takes in data as input and transforms it to a desired output.
+
+11. What is Routing?
+    It means navigating between pages when user perform the application tasks.
+    This supports the concept called Lazy loading.
+
+12. What is Service?
+    It is like a singleton object which gets instantiated only once during the lifetime of an application.
+    Services contain methods that maintain data throughout the life on an application.
+    It is used to share business logic, models, data and functions between different components of an Angular application.
+
+13. What is Forms?
+    Forms are essential part of many web applications, it is the most common way to enter and edit text-based data.
+    Angular allows 2-types of forms:
+    Template-driven forms - Simple forms that can be made quickly.
+    Reactive Forms - It is also known as model-driven forms. 
+                    We can apply validations and business rules.
+                    Most common forms that we use to communicate data b/w client and server.
+
+14. What is Data Binding?
+    It is way of communcation between component and DOM element.
+    Data binding is 4 different types:
+        1. String Interpolation - {""}
+        2. Property binding - []
+        3. Event binding - ()
+        4. Two way binding - [()]
+
+15. What is Dependency Injection?
+    It is a software design pattern that deals with how components get hold of their dependencies.
+    It is a way to create an object that depend upon other objects.
+    A Dependency Injection system supplies the dependent objects when it creates an instance of an object.
+
+16. What is Typescript?
+    It is an open source programming language. 
+    It is also called as superset of javascript. (Type safe javascript).
+    It support OOPS concepts.
+    It transpiles typescript code to javascript code at runtime.
+
+17. What is JIT and AOT compilation?
+    JIT - (Just in Time) A run time compilation on Users browser.
+    AOT - (Ahead of Time) It is build time compilation. It is mostly used  in production builds.
+
+18. What is TRACEUR Compiler?
+    This compiles the code according to the browser that application is loading.
+
+19. What is EAGER and LAZY Loading?
+    EagerLoading: Loading module at application startup or before even the component is being used.
+    LazyLoading: It is on demand loading. Loading the component only when required. This has the advantage of improving the 
+                application startup time.
+
+20. What is Single Page Application?
+    Single Page Applications are Web applications that loads single HTML page and dynamically renders the page as the 
+        user interacts with the application.
+
+21. @Input and @Output?
+    These are 2 decorators used to establish communication between two components ie., parent and child components.
+    @Input - From Parent to child.
+    @Output - From Child to Component.
+
+22. Life Cycle Hooks?
+    Every component & directives has a lifecycle managed by angular.
+        ngOnChages(), ngOnInit(), ngDoCheck(), ngAfterContentInit(),
+        ngAfterContentChecked(), ngAfterViewInit(), ngAfterViewChecked(),
+        ngOnDestroy().
+
+23. RXJS(Reactive Programming) - Async calls?
+    Reactive programming is an asynchronous programming.
+    It provides implementation of the Observable type.
+
+24. What is Observable?
+    It provide support for passing messages between publishers and subscribers in your application.
+    It offers significant benefits over other techniques for event handling, asynchronous programming, and 
+        handling multiple values.
+
+25. Security in web application?
+    Authentication - The User login credentials are passed to an authenticate API (on the server). On the server side
+                    validation of the credentials happens and a JSON Web Token (JWT) is a JSON object that has some 
+                    information or attributes about the current user. Once the JWT is given to the client, the client
+                    or the user will be identified with that JWT. 
+    Authorization - After logging in successfully, the authenticated or genuine user does not have access to everything.
+                    The user is not authorized to access someone else's data, he/she is authorized to access some data.
+
+26. What is JWT (JSON Web Token)
+    It is an open standard and is used for securely transmitting information between parties as a JSON object.
+    There are some scenarios where we can use JSON Web Tokens - 
+    1. Authentication
+    2. information Exchange
+
+27. What is Interceptors
+    Interceptors are used to intercept outgoing requests or incoming responses
+    This can be really useful for features like caching and logging.
+    This be used on multiple scenarios
+    1. Setting the Origin for each outgoing request
+    2. Adding authentication token to every request etc.
+
+28. What is REDUX?
+    It is a library and it helps to maintain the state of the application. 
+    It reduces the client to server calls for same data.
+    
+29. Angular Cookie?
+    A cookie is a small piece of data sent from a website and stored on the user's machine by the user's web browsers
+    while  the user is browsing.
+    This is a great method for authentication.
+    install cookie -
+    npm install ngx-cookie-service --save.
+
+30. What is Angular Material?
+    It is one of CSS framework designed by angular. It is built in option in Angular framework.
+
+31. what is Bootstrap?
+    It is the widely used CSS framework used from ages in frontend development.
+
+32. What is ECMAScript?
+    It is one of the scripting standard coding techniques
+
+33. What is Package.JSON?
+    It will have all the configuration, dev package settings.
+
+34. What is Angular CLI?
+    It is a command line interfacec to scaffold and build angular apps using nodejs style (commonJs) modules.
+    It is recommended to use CLI to create angular projects, components, services etc., because we no need to write
+        much code and  no need to configure most of the required dependencies. Lot of time will be saved.
+
+35. Angular CLI commands?
+    ng new - For creating a new project
+    ng serve - For running project
+    ng generate - For generating Components, Directives & Services
+    ng test - run the testing
+
+36. What is NODE JS?
+    Node.js is an open-source, cross-platform Javascript run-time environment that executes JavaScript code server-side.
+
+37. 
+
